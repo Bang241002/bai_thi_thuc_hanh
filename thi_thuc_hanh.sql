@@ -35,10 +35,10 @@ GO
 
 --ý3: Insert into each table at least 3 records. 
 insert into Customer values 
-	(123, N'ĐInh Công bang', N'Nam Định', N'Việt Nam'),
-	(124, N'Nguyễn Danh Hưng', N'Nghệ An', N'Việt Nam'),
-	(125, N'Bùi Văn Dũng', N'hà nội', N'Việt Nam' ),
-	(126, N'Lê Tuấn Minh', N'Hà Nội', N'Việt Nam')
+	(123, N'ĐInh Công bang', N'Nam Định', N'Việt Nam', N'bang@gmail.com' ,N'0123456789' ),
+	(124, N'Nguyễn Danh Hưng', N'Nghệ An', N'Việt Nam', N'hung@gmail.com',N'0123456798'  ),
+	(125, N'Bùi Văn Dũng', N'hà nội', N'Việt Nam', N'dung@gmail.com', N'0123456879'  ),
+	(126, N'Lê Tuấn Minh', N'Hà Nội', N'Việt Nam', N'minh@gmail.com', N'0123457689' )
 
 insert into CustomerAccount values
 	('19024124', 13, 100000, 2000),
@@ -73,3 +73,4 @@ join CustomerTransaction
 on CustomerAccount.AccountNumber = CustomerTransaction.AccountNumber
 
 select * from vCustomerTransactions
+7
